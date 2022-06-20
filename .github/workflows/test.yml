@@ -9,6 +9,7 @@ jobs:
   the-boi-that-i-has-issue-with:
     if: github.event.base_ref == 'refs/heads/main'
     name: The Boi that I has issue with
+    runs-on: ubuntu-latest
 
     steps:
       - name: Bruh
@@ -16,6 +17,7 @@ jobs:
 
   printing-out-everything:
     name: Printing out everything
+    runs-on: ubuntu-latest
 
     steps:
       - name: Prints
