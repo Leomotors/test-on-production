@@ -1,6 +1,4 @@
-# * Original: https://github.com/discordjs/voice/blob/main/.github/workflows/docs.yml
-
-name: Documentation
+name: Main Test
 
 on:
   push:
