@@ -1,0 +1,27 @@
+# * Original: https://github.com/discordjs/voice/blob/main/.github/workflows/docs.yml
+
+name: Documentation
+
+on:
+  push:
+    tags:
+      - "*.*"
+
+jobs:
+  the-boi-that-i-has-issue-with:
+    if: github.event.base_ref == 'refs/heads/main'
+    name: The Boi that I has issue with
+
+    steps:
+      - name: Bruh
+        run: echo "It works"
+
+  printing-out-everything:
+    name: Printing out everything
+
+    steps:
+      - name: Prints
+        run: |
+          echo github.ref is ${{ github.ref }}
+          echo github.event.base_ref is ${{ github.event.base_ref }}
+          echo github.event.head_ref is ${{ github.event.head_ref }}
